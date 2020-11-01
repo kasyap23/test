@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>inFolks Digital</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/aos.css">
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <!-- SCRIPTS -->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/aos.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+     <!--font Awesome-->
+     <script src="https://kit.fontawesome.com/0f51151aa8.js" crossorigin="anonymous"></script>
+
+
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/templatemo-digital-trend.css">
+     <style>
+     .navbar,.navbarNav
+     {
+       background:#004445;
+     }
+     .hero-bg
+     {
+       background:#2c7873;
+     }
+
+
+
+      .nav-link
+      {
+        cursor:hand;
+      }
+
+
+      .about
+      {
+        background:#F7F7F7;
+      }
+      strong
+     {
+       color:#FF6347;
+     }
+     .h-line
+     {
+
+       width:7%;
+       height:3px;
+       background:#bf4aa8;
+       margin-bottom: 2px;
+
+
+     }
+     .custom-btn,.btn
+     {
+       color:inherit;
+     }
+     .arrow {
+       display: inline-block;
+       position: absolute;
+       width: 15px;
+       height: 15px;
+       background: inherit;
+
+       border-top: 2px solid #bfbfbf;
+       border-left: 2px solid #bfbfbf;
+       transition: all 250ms ease-in-out;
+      text-decoration: none;
+      border-color: black;
+    }
+
+    .arrow:hover {
+      border-color: black;
+      border-width: 5px;
+    }
+
+    .arrow:before {
+      display: block;
+      height: 100%;
+      width: 100%;
+      margin-left: -50%;
+      margin-top: -50%;
+      content: "";
+      transform: rotate(45deg);
+    }
+
+    .project-text{
+      text-align: center;
+    }
+
+    .container-fluid {
+    padding: 3% 15% ;
+}
+
+  
+  .test{
+    padding:0% 30% 2% 39%
+  }
+
+  .project-heading{
+    padding-bottom: 20px;;
+  }
+
+  .project-heading2{
+    padding-bottom: 0px;
+  }
+
+  #project{
+    background-color: #aee7e8;
+  }
+
+  .features{
+   
+   position: relative;
+  padding-bottom: 10%;
+  }
+  .feature-box{
+    
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+  .image{
+    height: 35px;
+    width: 35px;
+  }
+
+  .bg{
+    background-color: black;
+  }
+  
+  
+    .contact-section
+    {
+      background:#FAFAFA;
+    }
+  .contact2{
+  
+    position: relative;
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  
+  .contact2 .content
+  {
+    max-width: 800px;
+    text-align: center;
+  }
+  .contact2 .content h2{
+    
+    font-size: 36px;
+    font-weight: 500;
+
+  }
+  
+  .cc{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+  }
+
+  .cc .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+  .cc .contactInfo .box{
+    position: relative;
+    padding: 20px, 0;
+    display: flex;
+  }
+
+  .cc .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00bcd4;
+    border-radius: 50%;
+    font-size: 22px;
+  }
+  
+  .cc .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+  }
+  .cc .contactInfo .box .text h3{
+    font-weight: 500;
+
+  }
+
+  form{
+    width:350px
+  }
+
+ .contactForm{
+   width:40%;
+   padding: 20px;
+   background:white;
+ }
+ .contactForm h2{
+   font-size: 30px;
+   color: #333;
+   font-weight: 500;
+ }
+
+ .contactForm .inputBox
+{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+  width:100%;
+  padding: 5px 0px;
+  font-size: 16px;
+  margin: 10px 0px;
+  border:none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contactForm .inputBox span{
+  position: absolute;
+  left:0;
+  padding: 5px 0px;
+  font-size: 16px;
+  margin: 10px 0px;
+  pointer-events: none;
+  transition: o.5%;
+  color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+  color:cornflowerblue;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+  width: 100px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+    /*.influ-list
+    {
+      list-style-type: none;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      columns: 2;
+      list-style-position: inside;//this is important addition
+    }*/
+
+
+     </style>
+
+
+</head>
+<body>
+
+     <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+
+              inFolks Digital
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a href="index.html" class="nav-link smoothScroll">Home</a>
+                  </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link smoothScroll">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link smoothScroll">Influencers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact-section" class="nav-link contact smoothScroll">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+     <!-- HERO -->
+     <section class="hero hero-bg pt-4 d-flex justify-content-center align-items-center">
+               <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-top align-items-center">
+
+
+                              <div class="hero-text">
+                                <h6 class="pb-1" style="font-size:20px;">Influential Marketing Servies</h6>
+
+                                   <h1 class="pb-4 text-white heading" data-aos="fade-up">Boost Your Brand Image and Sales with Us!</h1>
+
+                                   <!--<hr class="h-line" align="left">
+                                   <br><br>-->
+                                   <h6 class="text-white side-heading">Better Brand Positioning, Better Brand Awareness, Better Trust, Better Leads, Better Sales, Better ROI, Better Profits!! </h6>
+                                   <div class="row">
+                                  <div class="col-lg-4 col-12" data-aos="fade-up">
+                                       <a href="#" class="custom-btn btn mt-3" onclick="brand()" id="brand-select" name="brand-select">I am a Brand</a>
+                                  </div>
+                                  <div class="col-lg-8 col-12" data-aos="fade-up">
+                                     <a href="#" class="custom-btn btn mt-3" onclick="influencer()" id="influencer">I am an Influencer</a>
+                                   </div>
+                                </div>
+                                <div class=" col-lg-8"style="box-sizing:border-box;">
+                                     <a href="#contact-section" class="custom-btn btn mt-3">Get in Touch</a>
+                                 </div>
+
+
+
+                              </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12 ">
+                          <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+
+                            <img src="images/working-girl.png" class="img-fluid" alt="working girl">
+                          </div>
+                        </div>
+
+                    </div>
+               </div>
+     </section>
+
+
+     <!-- ABOUT -->
+     <section class="about section-padding pt-4" id="about">
+          <div class="container">
+            <h1>About Us</h1>
+            <br><br>
+               <div class="row col-lg-10 mx-auto col-md-10 col-12 pt-2">
+
+                 <div class="about-info heading">
+                   <p style="text-align:justify;text-indent:15%;" data-aos="fade-up">
+                      InFolks Digital is an upcoming influencer marketing agency in India founded with a focus to ensure effective growth hacking and marketing of products and services of different brands. We connect various influencers with different brands and help both to grow. Firstly, we'll discuss the marketing needs and the various objectives with you to create the right marketing strategy for your brand. Then, we find the right influencers to market your product or service, create the best marketing strategy for the product or service which would attract the target audience and plan and execute the campaign. Our marketing experts provides the right solution to your marketing needs inside your financial limit from our network of more than 2000 influencers across a wide range of categories on YouTube, Instagram and Facebook. We are a young organisation with high spirits looking to cater to your marketing needs in the most efficient and effective way. Leave your brand building and promotion on us and be assured of great results. The brand satisfaction is our top most priority and we strive for it.
+                    </p>
+                    <br><br>
+                    <h3 class="side-heading" style="color:black;">Finest Influencer Marketing Agency</h3><br>
+
+                      <!--<p  class="col-lg-12 col-sm-3" data-aos="fade-up" style="font-size:30px;text-align:left;">Finest Influencer Marketing Platform in India</p>
+                        <br><br>-->
+
+                      <p class="pb-4 col-lg-15" style="text-indent:5%;text-align:justify;" data-aos="fade-up">
+
+                        <strong style="font-size:20px;">InFolks Digital</strong> is an upcoming and young organisation which aims to disrupt the market by providing the best solutions to all your marketing needs. We aim to help brands connect with the best social media influencers to market their products or services in the best way so as to increase the brand image and sales. We have a network of more than 2000 social media influencers across a wide range of categories on YouTube, Instagram and Facebook. In Influencer Marketing, the social media influencers communicate about the benefits of the brand's product or services and make the potential customers aware about it at the right platform to the right audience. We curate the best list of influencers for the brand by checking various metrics like engagement rates, followers, content quality etc. so as to ensure a successful marketing campaign for the brand. <br>We help the brands to execute a successful marketing campaign through our influencers in the following steps:
+                      </p>
+                      <ul id="list">
+                        <li class="pb-4">
+                          <h4 class="pb-1 side-heading" data-aos="fade-left" style="color:black;">Listen to the requirements of the Brand</h4>
+                          <div class="pt-2 about-list" style="text-align:justify;" data-aos="fade-left">
+                            <p style="text-indent:5%;">We hold a round of discussion with the brand to understand their requirements and the objectives which they seek to achieve through the campaign. We believe it is important to listen to the brand carefully and then create a marketing strategy according so as to ensure a successful campaign.</p>
+                          </div>
+                        </li>
+                        <li class="pb-4">
+                          <h4 class="pb-1 side-heading" data-aos="fade-left" style="color:black;">Ideate the marketing strategy and choose Influencers</h4>
+                          <div class="pt-2 about-list" style="text-align:justify;" data-aos="fade-left">
+                          <p style="text-indent:5%;">Once the objectives of the campaign are set, our brand team creates the marketing strategies and choose the right influencers for the brand. The influencers are chosen after checking various metrics like engagement rates, followers, quality of content etc.</p>
+                          </div>
+                        </li>
+                        <li class="pb-3">
+                          <h4 class="pb-1 side-heading" data-aos="fade-left" style="color:black;">Execution of Campaign</h4>
+                          <div class="pt-2 about-list" style="text-align:justify;" data-aos="fade-left">
+                            <p style="text-indent:5%;">
+                              When the right influencers are chosen, we then create valuable content with suggestions from both the brand and the influencer so as to execute an effective and efficient Influencer Marketing campaign. <br>
+                            </p>
+                            <p style="text-indent:5%;">Well, a successful marketing campaign through the smartest word of mouth marketing method, i.e., influencer marketing has been executed and the results come in the form of better sales, better ROI, more awareness about the brand and more profits for the brand.
+                           </p>
+                          </div>
+                        </li>
+                      </ul>
+
+                    <br><br>
+                    <h3 class="side-heading" style="color:black;" data-aos="fade-up">What is Influencer Marketing?</h3><br>
+                    <p class="pb-4 col-lg-15" style="text-indent:10%;text-align:justify;" data-aos="fade-up">
+
+                       <strong>Influencer Marketing</strong> is the smartest word of mouth marketing method where influencers promote the brand's products or services on social media platforms. It is one among the best cost effective marketing methods which give good ROI and increase sales of the product or service.
+                    </p>
+                    <div class="pl-5">
+                        <h4 class="side-heading" style="color:black;" data-aos="fade-up">Benefits of Influencer Marketing</h4><br>
+                        <ul style="list-style:circle;" data-aos="fade-up" data-aos-delay="100">
+                          <li>It helps in effectively reaching out to your target audience.</li>
+                          <li>It improves brand awareness among the target audience and can tremendously expand your reach and position.</li>
+                          <li>It helps to build trust quickly.</li>
+                          <li>It builds powerful winning and powerful partnerships with influencers which will be beneficial for both.</li>
+                          <li>It is a very powerful marketing method which can drive a tremendous increase in your sales.</li>
+                          <li>It is comparatively cheaper than other marketing methods.</li>
+
+                    </div>
+
+
+                 </div>
+
+                 <div class="about-image" data-aos="fade-up" data-aos-delay="200">
+
+                  <img src="images/about-bottom.png" class="img-fluid" alt="office">
+                </div>
+
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- PROJECT -->
+     <section  id="project" class="features">
+          <div class="container-fluid">
+               <div class="row">
+                      <div class="col-lg-12 col-12">
+
+                        <h2 class="mb-5 text-center heading" data-aos="fade-up">
+                            Our
+                            <strong>Influencers</strong>
+                        </h2>
+                        <p class="project-heading" data-aos="fade-up">
+                           We have a network of more than 2000 social media influencers across a wide range of categories on YouTube, Instagram and Facebook.
+                           Our social media stars will introduce your brand’s products or services in the best way so as to boost the brand image and to increase sales.
+                        </p>
+                        <h4 style="color:black,font-size: 1rem;" data-aos="fade-up" data-aos-delay="100">These influencers are from a wide range of categories such as:</h4>
+                    </div>
+               </div> 
+          </div>
+          <div class="test" data-aos="fade-up">
+            <div class="row justify-content-md-center" >
+              <div class=" feature-box col-lg-6">
+                <img class="image"src="images/news.png" alt="small img" />
+                 <span>News</span>
+              </div>
+              <div class="feature-box col-lg-6 ">
+                <img class="image"src="images/football.svg" alt="small img" />
+                 <span>Sports</span>
+              </div>
+            </div>
+            <div class="row justify-content-md-center" >
+              <div class=" feature-box col-lg-6">
+                <img class="image"src="images/fashion.svg" alt="small img" />
+                 <span>Fashion</span>
+              </div>
+              <div class="feature-box col-lg-6 ">
+                <img class="image"src="images/car.png" alt="small img" />
+                 <span>Automobile</span>
+              </div>
+            </div>
+            <div class="row justify-content-md-center" >
+              <div class=" feature-box col-lg-6">
+                <img class="image"src="images/tech.svg" alt="small img" />
+                 <span>Tech</span>
+              </div>
+              <div class="feature-box col-lg-6 ">
+                <img class="image"src="images/travel.png" alt="small img" />
+                 <span>Travel</span>
+              </div>
+            </div>
+            <div class="row justify-content-md-center" >
+              <div class=" feature-box col-lg-6">
+                <img class="image"src="images/food.png" alt="small img" />
+                 <span>Food</span>
+              </div>
+              <div class="feature-box col-lg-6 ">
+                <img class="image"src="images/comedy.svg" alt="small img" />
+                 <span>Comedy</span>
+              </div>
+            </div>
+            <div class="row justify-content-md-center" >
+              <div class=" feature-box col-lg-6">
+                <img class="image"src="images/health.svg" alt="small img" />
+                 <span>Health</span>
+              </div>
+              <div class="feature-box col-lg-6 ">
+                <img class="image"src="images/gaming.svg" alt="small img" />
+                 <span>Gaming</span>
+              </div>
+            </div>
+         </div>
+
+     </section>            
+
+            
+    <section class="contact2">
+      <div class="content">
+          <h2>Contact Us</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+      <div class="cc">
+        
+        <div class="contactInfo ">
+            <div class="box">
+              <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="text">
+                <h3>Address</h3>
+                <p>velangi,kakinada east,Godavari</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fas fa-phone"></i></div>
+              <div class="text">
+                <h3>Phone </h3>
+                <p>+91 9641446582555</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon"><i class="fas fa-envelope"></i></div>
+              <div class="text">
+                <h3>Email</h3>
+                <p>info@infolks.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg-6">
+        <div class="contactForm ">
+          <form>
+            <h2>Send message</h2>
+            <div class="inputBox">
+              <input type="text" name="" required>
+              <span>Full name</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="" required>
+              <span>Email</span>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="" required>
+              <span>Mobile Number</span>
+            </div>
+            <div class="inputBox">
+              <textarea required="required"></textarea>
+              <span>Type your message...</span>
+            </div>
+            <div class="inputBox">
+              <input type="submit" name="" value="send">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+      </div>
+
+
+
+
+    </section>
+
+
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+            <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">We make creative <strong>brands</strong> only.</h1>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="my-4">Contact Info</h4>
+
+            <p class="mb-1">
+              <i class="fa fa-phone mr-2 footer-icon"></i>
+              +99 080 070 4224
+            </p>
+
+            <p>
+              <a href="#">
+                <i class="fa fa-envelope mr-2 footer-icon"></i>
+                hello@company.com
+              </a>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="300">
+            <h4 class="my-4">Our Studio</h4>
+
+            <p class="mb-1">
+              <i class="fa fa-home mr-2 footer-icon"></i>
+              Av. Lúcio Costa - Barra da Tijuca, Rio de Janeiro - RJ, Brazil
+            </p>
+          </div>
+
+          <div class="col-lg-4 mx-lg-auto text-center col-md-8 col-12" data-aos="fade-up" data-aos-delay="400">
+            <p class="copyright-text">Copyright &copy; 2020 Your Company
+            <br>
+          </div>
+
+          <div class="col-lg-4 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="500">
+
+            <ul class="footer-link">
+              <li><a href="#">Stories</a></li>
+              <li><a href="#">Work with us</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
+            <ul class="social-icon">
+              <li><a href="#" class="fa fa-instagram"></a></li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-dribbble"></a></li>
+              <li><a href="#" class="fa fa-behance"></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <script text="type/javascript">
+     function brand()
+     {
+
+       document.getElementById("inside-form").innerHTML="<form><h3 class='side-heading' align='center'>Fill Your Brand Details<br>We will get back to you soon!</h3>" +
+       "<br><br>"+
+             "Brand Name*<br><input type='text' id='brand-name' name='brand-name'><br>"+
+             "Website/App Link*<br><input type='text' id='webapplink' name='webapplink'><br>"+
+             "E-Mail*<br><input type='text' id='email' name='email'><br>"+
+             "Contact number*<br><input type='text' id='phone' name='phone'><br>"+
+             "<center><button type='submit' value='submit' name='brand-submit' id='brand-submit' class='submit-btn'>Send</button></center><br>"+
+         "</form>";
+     window.open("#contact-section","_self");
+
+   };
+   function influencer()
+   {
+     document.getElementById("inside-form").innerHTML="<form><h3 class='side-heading' align='center'>Fill Your Details<br>We will get back to you soon!</h3>" +
+     "<br><br>"+
+           "Influencer Name*<br><input type='text' id='influ-name' name='influ-name'><br>"+
+           "Youtube/Instagram Link*<br><input type='text' id='sociallink' name='sociallink'><br>"+
+           "E-Mail*<br><input type='text' id='email' name='email'><br>"+
+           "Contact number*<br><input type='text' id='phone' name='phone'><br>"+
+           "<center><button type='submit' value='submit' name='brand-submit' id='brand-submit' class='submit-btn'>Send</button></center><br>"+
+       "</form>";
+   window.open("#contact-section","_self");
+
+   }
+    </script>
+
+
+
+
+</body>
+</html>
